@@ -1,0 +1,338 @@
+html {
+    font-size: 16px;
+}
+
+p {
+    margin: 0 0;
+    font-family: 'Rasa';
+}
+h2 {
+    font-family: 'Rasa';
+}
+
+body {
+    font-family: 'Inria Serif', 'Rasa', serif;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.link-menu { font-size: 18px;}
+
+@media screen and (max-width: 900px) {
+    .link-menu { font-size: 15px;}
+}
+   /* Для ширины 600 пикселей и меньше */
+@media screen and (max-width: 640px) {
+    .link-menu { font-size: 10px;}
+    /* #navbar { margin: 10px 0px;} */
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+
+.main-brand {
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.bg-ligth {
+    background: #4A4948;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.pad {
+    padding-left: 40px;
+}
+/* .link {
+    color: #000;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 37px;
+    
+}
+.link:hover {
+    color: #686868;
+    text-decoration: none;
+} */
+
+.link {
+    color: #000;
+    text-decoration: none;
+    background:  no-repeat 0 100%;
+    background-image: linear-gradient(#000, #000);
+    background-size: 0% 1.25px;
+    transition: background-size .5s ease;
+  }
+  
+.link:hover, .link:focus {
+background-size: 100% 1.25px;
+color: #000;
+}
+
+.link1 {
+    color: #fff;
+    text-decoration: none;
+}
+.link1:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.menu {
+    text-align: center;
+}
+
+.out {
+    height: 80px;
+}
+
+
+
+footer .logo {
+    color: #fff;
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+
+#navbar {
+    /* display: flex; */
+    margin: 40px 0px;
+    padding: 0;
+    list-style: none;
+    /* width: 550px; */
+    text-align: center;
+    position: relative;
+}
+#navbar li { display: inline-block; position: relative;}
+#navbar a {
+    color: #000;
+    padding: 0px 3px;
+    margin: 5px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Rasa';
+    font-style: normal;
+    display: inline-block;
+    line-height: 37px;
+    /* display: block; */
+    /* font-size: 1.5vw; */
+}
+
+#navbar ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 15%;
+    background-color: #F4F4F4;
+    border-radius: 10px; 
+    /* width:100px; */
+}
+
+#navbar .col2 {
+    columns: 2;
+    width: auto;
+}
+#navbar .col2 li{
+    width: 180px;
+}
+
+/* отображаем выпадающий список при наведении */
+#navbar li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+#navbar ul .li2 {
+    display: block;
+    width: 125px;
+}
+
+#navbar ul li {
+    display: block;
+    width: 200px;
+
+}
+#navbar ul li:hover {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+#navbar ul li a {
+    display: block;
+    margin: 0 10px;
+    text-align: start;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+}
+.cart__num {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Rasa';
+    top: 44px;
+    right: 1px;
+  }
+.liked__num {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Rasa';
+    top: 40px;
+    right: 36px;
+  }
+
+.product h3 {
+    position: relative;
+    bottom: 220px;
+    left: 230px;
+    font-size: 25px;
+    width: auto;
+}
+.product p {
+    position: relative;
+    bottom: 210px;
+    left: 230px;
+    width: auto;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.product h1 {
+    position: relative;
+    bottom: 346px;
+    left: 680px;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 45px; */
+    line-height: 73px;
+    width: 50px;
+}
+.product .ruble {
+    position: relative;
+    bottom: 408px;
+    left: 770px;
+    width: 32px;
+}
+.product .delete {
+    position: relative;
+    bottom: 412px;
+    left: 790px;
+    width: 46px;
+    background-color: #FFF;
+    border: 0px solid #fff;
+}
+.basket-order {
+    position: relative;
+    left: 160px;
+    bottom: 280px;
+    background-color: #D9D9D9;
+}
+.basket-order h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+}
+.basket-order .sale {
+    font-style: normal;
+    position: relative;
+    bottom: 40px;
+    font-weight: 400;
+    line-height: 33px;
+}
+.basket-order .price-sale {
+    font-style: normal;
+    position: relative;
+    bottom: 80px;
+    font-weight: 400;
+    line-height: 33px;
+}
+.basket-order p{
+    position: relative;
+    bottom: 30px;
+    left: 210px;
+    width: 50px;
+}
+.basket-order .ruble {
+    position: relative;
+    bottom: 56px;
+    left: 250px;
+    width: 12px;
+    height: auto;
+}
+.basket-order .ruble-sale {
+    position: relative;
+    bottom: 111px;
+    left: 250px;
+    width: 12px;
+    height: auto;
+}
+.basket-order hr {
+    position: relative;
+    bottom: 100px;
+}
+.basket-order button {
+    position: relative;
+    bottom: 108px;
+    left: 60px;
+    width: 160px;
+    height: 26px;
+    background-color: #4A4948;
+    border: 0px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.basket-order button:hover {
+    background-color: #817f7c;
+    color: #fff;
+    cursor: pointer;
+}

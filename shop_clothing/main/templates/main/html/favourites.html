@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tingo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="favourites.css" />
+</head>
+<body>
+  <header class="py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1"></div>
+      <div class="col-4 main-brand">
+        <a href="index.html"><img src="Brand.svg" alt="TINGO" /></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="nav-link mx-1" href="#">
+            <img src="search_magnifier_icon_145939.svg" width="35" height="35" alt="поиск" />
+          </a>
+          <a class="nav-link mx-1" href="#">
+            <img src="account_avatar_face_man_people_profile_user_icon_123197.svg" width="30" height="30" alt="пользователь" />
+          </a>
+          <a class="nav-link mx-2" href="#">
+            <img src="likesocialheartbuttonoutline_87752.svg" width="28" height="28" alt="понравилось" />
+            <div class="liked__num" id="liked_num">0</div>
+          </a>
+          <a class="nav-link mx-1 cart" href="#">
+            <img src="basket_96252.svg" width="27" height="27" alt="корзина" />
+            <div class="cart__num" id="cart_num">0</div>
+          </a>
+      </div>
+    </div>
+
+      <ul id="navbar" class="mb-5">
+        <li><a href="product.html" class="link link-menu">ОДЕЖДА</a>
+        <ul class="col2">
+          <li><a href="#">Футболки</a></li>
+          <li><a href="#">Свитера</a></li>
+          <li><a href="#">Спортивные костюмы</a></li>
+          <li><a href="#">Джинсы</a></li>
+          <li><a href="#">Рубашки</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">АКСЕССУАРЫ</a>
+        <ul>
+          <li class="li2"><a href="#">Шапки</a></li>
+          <li class="li2"><a href="#">Шарфы</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">НОВИНКА</a>
+        <ul>
+          <li><a href="#">Спортивные костюмы</a></li>
+          <li><a href="#">Рубашки</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">SALE</a>
+        <ul>
+          <li class="li2"><a href="#">Футболки</a></li>
+          <li class="li2"><a href="#">Свитера</a></li>
+        </ul>
+        </li>
+      </ul>
+  </header>
+
+  <h2 class="ms-5 mb-4">Избранное (2)</h2>
+  <div class="container-fluid p-0">
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 ms-3">
+      <div class="col">
+        <div class="card">
+          <a href="product.html" ><img src="kostim.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="product.html" class="link"><p class="card-title" style="font-size:20px;">Спортивный костюм черный</p></a>
+            <h5 class="card-text">5999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark ms-4">В корзину</button>
+            <!-- <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim2.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Спортивный костюм кофейный</p></a>
+            <h5 class="card-text">5999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark ms-4">В корзину</button>
+            <!-- <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a> -->
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+    </div>
+      
+      
+    
+    
+    
+  </div>
+  
+    
+  <div class="out"></div>
+
+
+
+  <footer class="bg-ligth py-2">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4">Одежда</h4>
+  
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Футболки</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Свитера</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Спортивные костюмы</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Джинсы</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Рубашки</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4">Аксессуары</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Шапки</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Шарфы</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h4 class="text-uppercase text-white mb-4">Новинка</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Спортивные костюмы </a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Рубашки</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4 pad">Контакты</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"><img src="Phone.svg" alt="трубка телефона" width="25px" height="40px"></a>
+              <a href="#!" class="link1 h5" style="font-style: normal;">8 (988) 888 88 88</a>
+            </li>
+            <li class="mb-2 ps-3">
+              <a href="mailto:tingomen@info.ru" class="link1 h5" style="font-style: normal;">tingomen@info.ru</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <div class="container">
+      <p class="logo text-center">&copy;2023 TINGO SHOP</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

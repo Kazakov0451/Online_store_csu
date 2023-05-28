@@ -1,0 +1,55 @@
+{% load static %}
+<header class="py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1"></div>
+      <div class="col-4 main-brand">
+        <a href="{% url 'index' %}"><img src="{% static 'img/Brand.svg' %}" alt="TINGO" /></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+          <a class="nav-link mx-1" href="#">
+            <img src="{% static 'img/search_magnifier_icon_145939.svg' %}" width="35" height="35" alt="поиск" />
+          </a>
+          <a class="nav-link mx-1" href="#">
+            <img src="{% static 'img/account_avatar_face_man_people_profile_user_icon_123197.svg' %}" width="30" height="30" alt="пользователь" />
+          </a>
+          <a class="nav-link mx-2" href="#">
+            <img src="{% static 'img/likesocialheartbuttonoutline_87752.svg' %}" width="28" height="28" alt="понравилось" />
+            <div class="liked__num" id="liked_num">0</div>
+          </a>
+          <a class="nav-link mx-1 cart" href="#">
+            <img src="{% static 'img/basket_96252.svg' %}" width="27" height="27" alt="корзина" />
+            <div class="cart__num" id="cart_num">0</div>
+          </a>
+      </div>
+    </div>
+
+      <ul id="navbar" class="mb-5">
+        <li><a href="/products" class="link link-menu">ОДЕЖДА</a>
+        <ul class="col2">
+          <li><a href="#">Футболки</a></li>
+          <li><a href="#">Свитера</a></li>
+          <li><a href="#">Спортивные костюмы</a></li>
+          <li><a href="#">Джинсы</a></li>
+          <li><a href="#">Рубашки</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">АКСЕССУАРЫ</a>
+        <ul>
+          <li class="li2"><a href="#">Шапки</a></li>
+          <li class="li2"><a href="#">Шарфы</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">НОВИНКА</a>
+        <ul>
+          <li><a href="#">Спортивные костюмы</a></li>
+          <li><a href="#">Рубашки</a></li>
+        </ul>
+        </li>
+        <li><a href="#" class="link link-menu">SALE</a>
+        <ul>
+          <li class="li2"><a href="#">Футболки</a></li>
+          <li class="li2"><a href="#">Свитера</a></li>
+        </ul>
+        </li>
+      </ul>
+  </header>

@@ -1,0 +1,20 @@
+table {
+    font-family: "Rasa";
+    text-align: center;
+    border-radius: 20px;
+}
+th {
+    font-size: 18px;
+    padding: 10px;
+    background: #d8d7d7;
+}
+td {
+    background: #d8d7d7;
+    padding: 10px;
+}
+
+.table-size {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}

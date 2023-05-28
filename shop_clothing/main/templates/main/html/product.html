@@ -1,0 +1,125 @@
+{% extends 'main/html/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 img-prod" style="width: 500px">
+                <img src="kostim1.png" alt="костюм" class="ms-5" width ="420px", height="500px">
+                <img src="kostim11.png" alt="костюм" class="ms-5" width ="420px", height="500px">
+            </div>
+            <div class="col-md-6">
+                <div class="description-product">
+                    <h1>Костюм Спортивный</h1>
+                    <p class="art">АРТ: 14785369</p>
+                    <h1 class="price">5999</h1> 
+                    <img src="Ruble.png" alt="₽" class="ruble">
+                    </br>
+                    <a href="#" class="table">Таблица размеров</a>
+                    <h2>Размер: </h2>
+                    <div class="table-size">
+                        <span class="btn btn-size">48</span>
+                        <span class="btn btn-size">50</span>
+                        <span class="btn btn-size">52</span>
+                        <span class="btn btn-size">54</span>
+                        <span class="btn btn-size">56</span>
+                    </div>
+                    <input class="btn-shop" type="submit" value="Добавить в корзину">
+                    <a href="#" class="heart"><img src="heart.svg" alt="в избранное" ></a>
+                    <h2>О Товаре: </h2>
+                    <p class="description">Спортивный костюм черного цвета. Приятный на ощупь материал, не сковывающий движения крой - главные требования, предъявляемые к комфортной одежде на каждый день. Модель из мягкого хлопка с добавлением прочного полиэстера, благодаря которому вещь не деформируется. Регулировать объем капюшона удобно с помощью шнура с металлическими ограничителями. Составит актуальный образ с брюками из той же ткани.</p>
+                    <h2>Состав: </h2>
+                    <p class="description">Верх: Хлопок - 85%, Полиэстер - 15%. Подкладка: Хлопок - 100%</p>
+            </div>
+            </div>
+        </div>
+    </div>
+  <div class="out"></div>
+{% endblock %}
+
+  <footer class="bg-ligth py-2">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4">Одежда</h4>
+  
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Футболки</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Свитера</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Спортивные костюмы</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Джинсы</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Рубашки</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4">Аксессуары</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Шапки</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Шарфы</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
+          <h4 class="text-uppercase text-white mb-4">Новинка</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Спортивные костюмы </a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="link1 p">Рубашки</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h4 class="text-uppercase text-white mb-4 pad">Контакты</h4>
+  
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#!"><img src="Phone.svg" alt="трубка телефона" width="25px" height="40px"></a>
+              <a href="#!" class="link1 h5" style="font-style: normal;">8 (988) 888 88 88</a>
+            </li>
+            <li class="mb-2 ps-3">
+              <a href="mailto:tingomen@info.ru" class="link1 h5" style="font-style: normal;">tingomen@info.ru</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <div class="container">
+      <p class="logo text-center">&copy;2023 TINGO SHOP</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

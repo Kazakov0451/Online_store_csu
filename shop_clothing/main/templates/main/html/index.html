@@ -1,0 +1,55 @@
+{% extends 'main/html/base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <a href="#"><img src="{% static 'img/img1.png' %}" alt="Первый слайд" /></a>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <a href="#"><img src="{% static 'img/img2.png' %}" alt="Второй слайд" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="out"></div>
+    
+    <div class="photo-mosaic">
+      <a href="#"><div class="photo-t-shirt"><img src="{% static 'img/T-shirt.png' %}"></div></a>
+      <div class="t-shirt-img" >
+        <img src="{% static 'img/футболки баз и цвет.png' %}">
+        <a href="#"><h2 class="link">Футболки</h2></a> 
+        <p><a href="#" class="link">базовые цветные</a></p>
+      </div>
+      <a href="#"><div class="photo" ><img src="{% static 'img/hats.png' %}"></div></a>
+      <div class="costumes-img">
+        <img src="{% static 'img/спортивные костюмы.png' %}">
+        <h2><a href class="link">Спортивные костюмы</a></h2>
+      </div>
+      <div class="photo-costumes"><a href="#"><img src="{% static 'img/costumes.png' %}"></a></div>
+      <div class="hats-img">
+        <img src="{% static 'img/шапки дем и сезн.png' %}">
+        <a href="#"><h2 class="link">Шапки</h2></a> 
+        <p ><a href="#" class="link text-white">демисезонные утепленные</a></p>
+      </div>
+      <div class="photo"><a href="#"><img src="{% static 'img/shirts.png' %}"></a></div>
+      <div class="shirts-img">
+        <img src="{% static 'img/рубашки свободного кроя.png' %}">
+        <h2><a href="#" class="link">Рубашки свободного кроя</a></h2>
+      </div>
+      <div class="product-catalog-img">
+        <img src="{% static 'img/каталог товаров.png' %}">
+        <h2><a href="#" class="link text-white">Каталог товаров</a></h2>
+      </div>
+    </div>
+   <div class="out"></div>
+ {% endblock %}

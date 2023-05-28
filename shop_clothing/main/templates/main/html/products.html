@@ -1,0 +1,83 @@
+{% extends 'main/html/base.html' %}
+{% load static %}
+{% block content %}
+
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
+      {% for product in products %}
+      <div class="col">
+        <div class="card">
+          <a href="#" ><img src="{{ product.images.url }}" class="card-img-top" alt="{{ product.name }}"></a>
+          <div class="card-body">
+            <a href="product.html" class="link"><p class="card-title" style="font-size:20px;">{{ product.name }}</p></a>
+            {% for i in product.price.all %}
+            <h5 class="card-text">{{ i.price}}₽</h5>
+            {% endfor %}
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="{% static 'img/heart.svg' %}" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="out"></div>
+
+{% endblock %}
+
+<div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim2.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Спортивный костюм кофейный</p></a>
+            <h5 class="card-text">5999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim3.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Спортивный костюм бежевый</p></a>
+            <h5 class="card-text">5999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim4.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Толстовка черная</p></a>
+            <h5 class="card-text">3999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim5.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Толстовка персиковая </p></a>
+            <h5 class="card-text">3999₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="#"><img src="kostim6.png" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <a href="#" class="link"><p class="card-title" style="font-size:20px;">Спортивный костюм с шортами графитовый</p></a>
+            <h5 class="card-text">4899₽</h5>
+            <button type="button" style="width: 230px;" class="btn btn-dark">В корзину</button>
+            <a href="#"><img class="m-1" src="heart.svg" width="30px" alt="добавить в избранное"></a>
+          </div>
+        </div>
+      </div>
+

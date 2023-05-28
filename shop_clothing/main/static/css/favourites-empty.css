@@ -1,0 +1,360 @@
+html {
+    font-size: 16px;
+}
+
+p {
+    margin: 0 0;
+    font-family: 'Rasa';
+}
+h2 {
+    font-family: 'Rasa';
+}
+
+body {
+    /* font-family: 'Inria Serif', 'Rasa', serif; */
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.link-menu { font-size: 18px;}
+
+@media screen and (max-width: 900px) {
+    .link-menu { font-size: 15px;}
+}
+   /* Для ширины 600 пикселей и меньше */
+@media screen and (max-width: 640px) {
+    .link-menu { font-size: 10px;}
+    /* #navbar { margin: 10px 0px;} */
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+  }
+
+
+.main-brand {
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+.bg-ligth {
+    background: #4A4948;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.pad {
+    padding-left: 40px;
+}
+/* .link {
+    color: #000;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 37px;
+    
+}
+.link:hover {
+    color: #686868;
+    text-decoration: none;
+} */
+
+.link {
+    color: #000;
+    text-decoration: none;
+    background:  no-repeat 0 100%;
+    background-image: linear-gradient(#000, #000);
+    background-size: 0% 1.25px;
+    transition: background-size .5s ease;
+  }
+  
+.link:hover, .link:focus {
+background-size: 100% 1.25px;
+color: #000;
+}
+
+.link1 {
+    color: #fff;
+    text-decoration: none;
+}
+.link1:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.menu {
+    text-align: center;
+}
+
+.out {
+    height: 120px;
+}
+
+.photo-mosaic {
+    width: 100%;
+    padding: 0px 25px 0px;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .logo {
+    color: #fff;
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+}
+
+.t-shirt-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.costumes-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.hats-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.shirts-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.product-catalog-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.t-shirt-img h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    /* top: 120px; */
+    color: black;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em; 
+    justify-self: start;
+}
+.t-shirt-img p {
+    position: absolute;
+    top: 60%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    /* top: 120px; */
+    color: black;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em; 
+    justify-self: start;
+}
+.hats-img h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    /* top: 120px; */
+    color: black;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em; 
+    justify-self: start;
+}
+.hats-img p {
+    position: absolute;
+    top: 60%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    /* top: 120px; */
+    color: black;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em; 
+    justify-self: start;
+    color: #fff;
+}
+.costumes-img h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.shirts-img h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.product-catalog-img h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 4.2vw;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+#navbar {
+    /* display: flex; */
+    margin: 40px 0px;
+    padding: 0;
+    list-style: none;
+    /* width: 550px; */
+    text-align: center;
+    position: relative;
+}
+#navbar li { display: inline-block; position: relative;}
+#navbar a {
+    color: #000;
+    padding: 0px 3px;
+    margin: 5px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: 'Rasa';
+    font-style: normal;
+    display: inline-block;
+    line-height: 37px;
+    /* display: block; */
+    /* font-size: 1.5vw; */
+}
+
+#navbar ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 15%;
+    background-color: #F4F4F4;
+    border-radius: 10px; 
+    /* width:100px; */
+}
+
+#navbar .col2 {
+    columns: 2;
+    width: auto;
+}
+#navbar .col2 li{
+    width: 180px;
+}
+
+/* отображаем выпадающий список при наведении */
+#navbar li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+#navbar ul .li2 {
+    display: block;
+    width: 125px;
+}
+
+#navbar ul li {
+    /* min-width:170px; */
+    /* float:none; */
+    /* display:list-item; */
+    /* position: relative; */
+    display: block;
+    width: 200px;
+    /* columns: 2; */
+}
+#navbar ul li:hover {
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+#navbar ul li a {
+    display: block;
+    margin: 0 10px;
+    text-align: start;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+}
+.carousel-inner {
+    z-index: 5;
+}
+.cart__num {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Rasa';
+    top: 44px;
+    right: 1px;
+  }
+.liked__num {
+    position: absolute;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Rasa';
+    top: 40px;
+    right: 36px;
+  }
+
+h4 {
+    font-family: 'Rasa';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px;
+}
